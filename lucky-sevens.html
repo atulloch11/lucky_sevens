@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Name: Ashley Tulloch
+Date Created: 11/18/19
+Most Recent Revision: 11/25/19
+-->
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Lucky Sevens</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type="text/JavaScript" src="lucky-sevens.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <br><br>
+        <center>
+        <h1>Lucky Sevens!</h1>
+      </center>
+        <br><br>
+        <form name="betForm" onsubmit=" return play();">
+
+            <div class="form-group">
+                <label for="Bet">Starting Bet: </label>
+                <input type="text" id="Bet" name="Bet" class="form-control" placeholder="$0.00">
+            </div>
+
+            <button type="submit" id="submitButton" class="btn btn-primary">Let's Play</button>
+            <button type="reset" id="resetButton" class="btn btn-primary">Reset</button>
+
+            <br>
+            <br>
+            <br>
+
+        </form>
+
+
+
+        <table id="results" class="table table-striped" style="display: none;">
+            <tbody>
+                <tr>
+                    <td>Starting Bet</td>
+                    <td><span id="start"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="totalRolls"></span></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td><span id="maxWon"></span></td>
+                </tr>
+                <tr>
+                    <td>Roll Count At Highest Amount Won</td>
+                    <td><span id="rollsAtMax"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+</body>
+
+</html>
